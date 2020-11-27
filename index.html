@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/menu.css">
+  <title>英雄联盟手游官网</title>
+  <script>
+(function (win, doc) {
+  if (!win.addEventListener) return;
+  function setFont() {
+    let html = document.documentElement;
+    let k = 750;
+    html.style.fontSize = html.clientWidth / k * 100 + "px";
+  }
+  setFont();
+  doc.addEventListener('DOMContentLoaded', setFont, false);
+  win.addEventListener('resize', setFont, false);
+  win.addEventListener('load', setFont, false);
+})(window, document);
+  </script>
+</head>
+
+<body>
+  <!-- 一、顶部菜单 -->
+  <div class="menu_container">
+    <!-- 1.1顶部菜单的标题logo -->
+    <div class="menu_title">
+      <a href="" class="menu_logo">
+        <img src="./assets/logo.png" alt="" />
+      </a>
+      <div class="menu_switch"></div>
+      <div class="menu_attend" onclick="showPop('popChoosePlatform')">
+        敬请关注
+      </div>
+      <!-- 1.2顶部菜单的下拉菜单 -->
+      <ul class="menu_nav">
+        <li onclick="showPage(0)">敬请关注</li>
+        <li onclick="showPage(1)">新闻资讯</li>
+        <li onclick="showPage(2)">游戏特色</li>
+        <li><a href="">问题反馈</a></li>
+        <li onclick="showPop('popFAQ')">FAQ</li>
+      </ul>
+    </div>
+    <script>
+
+    </script>
+
+</body>
+
+
+</html>
