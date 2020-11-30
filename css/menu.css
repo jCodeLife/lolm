@@ -1,10 +1,9 @@
 .menu_container {
   color: #fff;
-  position: relative;
-  z-index: 20;
 }
 .menu_container .menu_title {
   position: fixed;
+  z-index: 20;
   left: 0;
   top: 0;
   width: 100%;
@@ -18,6 +17,17 @@
 .menu_container .menu_title .menu_logo img {
   width: 1.59rem;
   height: 0.5rem;
+}
+.menu_container .menu_title .menu_attend {
+  float: right;
+  width: 1.4rem;
+  height: 0.51rem;
+  line-height: 0.51rem;
+  text-align: center;
+  font-size: 0.24rem;
+  border: 3px #ffe537 solid;
+  margin-top: 0.15rem;
+  margin-right: 0.5rem;
 }
 .menu_container .menu_title .menu_switch {
   float: right;
@@ -48,36 +58,26 @@
   background: transparent;
 }
 .menu_container .menu_title .menu_switch.menu_switch--expand::before {
-  transform: rotateZ(45deg);
+  transform: rotate(45deg);
   margin-top: 0;
-  background: #BC3129;
+  background: #bc3129;
 }
 .menu_container .menu_title .menu_switch.menu_switch--expand::after {
-  transform: rotateZ(-45deg);
+  transform: rotate(-45deg);
   margin-top: -0.016rem;
-  background: #BC3129;
-}
-.menu_container .menu_title .menu_attend {
-  float: right;
-  width: 1.4rem;
-  height: 0.51rem;
-  line-height: 0.51rem;
-  text-align: center;
-  font-size: 0.24rem;
-  border: 3px #ffe537 solid;
-  margin-top: 0.15rem;
-  margin-right: 0.5rem;
+  background: #bc3129;
 }
 .menu_container .menu_nav {
-  font-size: 0.3rem;
-  background: #1e1e1e;
+  z-index: 20;
   position: fixed;
   top: 0.98rem;
   right: 0;
-  width: 0;
+  font-size: 0.3rem;
+  background: #1e1e1e;
   text-align: center;
-  opacity: 0;
+  width: 0;
   height: 0;
+  opacity: 0;
   transition: 0.5s;
 }
 .menu_container .menu_nav li {
@@ -86,8 +86,8 @@
   line-height: 1.36rem;
   overflow: hidden;
 }
-.menu_container .menu_nav.menu_nav--visible {
-  opacity: 1;
+.menu_container .menu_nav.menu_nav--expand {
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
