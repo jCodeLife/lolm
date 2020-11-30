@@ -24,6 +24,11 @@
     <!-- 页面3-游戏信息 -->
     <link rel="stylesheet" href="./css/game.css" />
     <script>
+      if(document.documentElement.clientWidth>800){
+        confirm('请切换到手机模式效果较好')
+      }
+    </script>
+    <script>
       (function () {
         function setFont() {
           var html = document.documentElement; // 根元素
