@@ -9,8 +9,13 @@ var showPop = (function () {
     if (id === "popVideo") {
       var vdo = container.querySelector("video");
       vdo.play();
+      document.body.addEventListener('mousedown', function(){
+        vdo.muted = false;
+      }, false); 
     }
   }
+
+  
 
   // 获取所有的关闭按钮
   var closes = $$(".pop_close");
